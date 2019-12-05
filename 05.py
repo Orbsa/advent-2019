@@ -11,7 +11,7 @@ def jumpIf(bolo,i):
     if (bolo and cond) or (not bolo and not cond):
         return intcode[intcode[i+2]] if intcode[i]//10**3%10==0 else intcode[i+2]
     else:
-        return i+2
+        return i+3
 def compareLess(i):
     num1 = intcode[intcode[i+1]] if intcode[i]//10**2%10==0 else intcode[i+1]
     num2 = intcode[intcode[i+2]] if intcode[i]//10**3%10==0 else intcode[i+2]
